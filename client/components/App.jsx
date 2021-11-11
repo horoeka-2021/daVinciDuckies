@@ -3,7 +3,7 @@ import React from 'react'
 function App () {
   return (
     <div>
-      <h1>Widgets for the win!</h1>
+      <h1>da Vinci Duckies</h1>
     </div>
   )
 }

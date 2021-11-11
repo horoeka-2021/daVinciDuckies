@@ -1,9 +1,9 @@
 import request from 'superagent'
 
-const widgetUrl = '/api/v1/widgets/'
+const duckiesUrl = '/api/v1/duckies/'
 
-export function getWidgets () {
+export function getArt () {
   return request
-    .get(widgetUrl)
+    .get(duckiesUrl)
     .then(response => response.body)
 }
