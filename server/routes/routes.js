@@ -14,3 +14,8 @@ router.get('/', (req, res) => {
       return null
     }).catch(err => console.error(err))
 })
+
+router.post('/', (req, res) => {
+  console.log(req.body)
+  res.json(req.body)
+})

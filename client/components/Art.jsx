@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Art(props){
-    console.log(props)
 return (
    <>
    <div className="art-container">
