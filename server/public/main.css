@@ -23,4 +23,17 @@ body {
 .art-container{
   width: 200px;
   height: 400px;
+  display: flex;
+  /* flex-direction: row;
+  justify-content: center; */
+}
+
+.duck-Image {
+  max-width: 500px;
+
+}
+
+.directions {
+  width: 250px;
+  margin-left: 200px;
 }
