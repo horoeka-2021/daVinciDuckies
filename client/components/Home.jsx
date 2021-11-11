@@ -1,27 +1,30 @@
-import React, { useEffect, useState } from 'react'
-
+import React, { useState, useEffect } from 'react'
 import Form from './Form'
 import Art from './Art'
-import Result from './Result'
+import { getPrice } from '../api'
 
-function App () {
+function Home () {
   // const [art, setArt] = useState([])
-  const [price, setPrice] = useState(0)
+  const [guessCheck, setGuessCheck] = useState({
+    price: 0,
+    guess: 0
+  })
+  const [toggle, setToggle] = useState(false)
 
   // Test to make sure getPrice works as intended
   useEffect(() => {
     getPrice()
-      .then(priceAPI => {
-        // console.log('This is the price', price)
-        setPrice(priceAPI)
-        return null
+      .then(newPrice => {
+        console.log(guessCheck)
+        return setGuessCheck({ ...guessCheck, price: Number(newPrice) })
       })
       .catch(err => console.error('Oops! You fucked up', err.message))
-  }, [])
+  }, [toggle])
 
+  // const [test, setTest] = useState([])
   return (
-
     <div className='wrapper'>
+
       <div className='header'>
         <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" />
         <h1 className='title'>da Vinci Duckies</h1>
@@ -30,12 +33,10 @@ function App () {
       <div className="body">
         <h3>How much do you think the art is worth?</h3>
         <Art />
-        <Form />
-        <Result price={price} setPrice={setPrice}/>
+        <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} toggle={toggle} setToggle={setToggle}/>
       </div>
     </div>
-
   )
 }
 
-export default App
+export default Home
