@@ -1,8 +1,26 @@
-.widget-details .visible {
-  display: block;
+
+* {
+  box-sizing: border-box;
 }
 
-.widget-details .hidden {
-  display: none;
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
+
+.wrapper{
+  text-align: center;
+  margin: 50px;
+}
+
+.header-image{
+  height: 150px;
+  width: auto;
+}
+
+.art-container{
+  width: 200px;
+  height: 400px;
+}
