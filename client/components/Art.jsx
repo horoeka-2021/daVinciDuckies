@@ -22,6 +22,7 @@ function Art () {
         { /* <h1>{props.data.title}</h1>
         <img className="duck-Image" src={props.data.image} />
         <p>{props.data.description}</p> */ }
+        <div className='directions' >Directions: asf adf asdf asdf asdf asdf asdf adsf asdf asdf asdf asdf asdf adsf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf adsf asdf adsf</div>
       </div>
     </>
   )
