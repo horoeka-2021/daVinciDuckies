@@ -4,7 +4,7 @@ const request = require('superagent')
 
 module.exports = router
 
-// Server use '/home'
+// Server use '/api/v1/home'
 router.get('/', (req, res) => {
   console.log('Hello!')
   request.get('https://random-d.uk/api/v2/random')
@@ -13,5 +13,4 @@ router.get('/', (req, res) => {
       res.json({ output: response.body.url })
       return null
     }).catch(err => console.error(err))
-  // const duckData = res.body
 })
