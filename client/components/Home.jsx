@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Form from './Form'
 import Art from './Art'
 
-function Home () {
+function Home (props) {
 
 
   // const [test, setTest] = useState([])
@@ -17,6 +17,7 @@ function Home () {
 
         <div className="body">
             <h3>How much do you think the art is worth?</h3>
+            <p>{props.price}</p>
             <Art />
             <Form />
         </div>

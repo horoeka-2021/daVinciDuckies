@@ -3,14 +3,18 @@ import Home from './Home'
 
 import { getPrice } from '../api'
 
+
+
 function App () {
   // const [art, setArt] = useState([])
+  const [price, setPrice] = useState(0)
 
   // Test to make sure getPrice works as intended
   useEffect(() => {
     getPrice()
-      .then(price => {
-        console.log('This is the price', price)
+      .then(p => {
+        // console.log('This is the price', price)
+        setPrice(p)
         return null
       })
       .catch(err => console.error('Oops! You fucked up', err.message))
@@ -18,7 +22,7 @@ function App () {
 
   return (
     <div>
-      <Home />
+      <Home price={price} setPrice={setPrice}/>
     </div>
   )
 }
