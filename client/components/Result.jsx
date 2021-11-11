@@ -1,25 +1,22 @@
 import React from 'react'
 
+function Result (props) {
+  const messages = ['too high, try again']
 
-
-function Result(props){
-    console.log(props)
-    const messages = ['too high, try again']
-    
-return (
+  return (
     <>
-    <div className="result-container">
-        <p>{messages}</p>
+      <div className="result-container">
+        <h1>Result</h1>
+        <h3>{messages}</h3>
         {/* api price */}
         <p>{props.price}</p>
-        
+
         {/* guess price */}
         <p>{props.price}</p>
 
-    </div>
-    </>  
-)
-   
+      </div>
+    </>
+  )
 }
 
 export default Result
