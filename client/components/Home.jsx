@@ -5,7 +5,7 @@ import Art from './Art'
 function Home () {
 
 
-  const [test, setTest] = useState([])
+  // const [test, setTest] = useState([])
 
   return (
     <div className='wrapper'>
