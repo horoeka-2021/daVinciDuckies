@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { getPrice } from '../api'
 
 import Form from './Form'
 import Art from './Art'
