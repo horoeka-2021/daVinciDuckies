@@ -24,3 +24,7 @@ body {
   width: 200px;
   height: 400px;
 }
+
+.duck-Image {
+  max-width: 50vw;
+}
