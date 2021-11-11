@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react'
-import { getPrice } from '../api'
+import React, { useEffect, useState } from 'react'
+import Home from './Home'
 
-function App() {
+
+function App () {
+  const[art, setArt] = useState([])
   
 // Test to make sure getPrice works as intended
   
@@ -15,9 +17,11 @@ function App() {
   // }, [])
 
 
+
   return (
     <div>
-      <h1>da Vinci Duckies</h1>
+       <Home />
+       
     </div>
   )
 }
