@@ -7,6 +7,6 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, 'public')))
 
-server.use('/api/v1/duckies', routes)
+server.use('/api/v1/home', routes)
 
 module.exports = server
