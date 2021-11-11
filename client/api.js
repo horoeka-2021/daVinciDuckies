@@ -25,3 +25,11 @@ export function getPrice () {
 export function refreshPrice () {
   getPrice()
 }
+export function postGuess (input) {
+  return request
+    .post(homeUrl)
+    .send({ input })
+    .then(response => {
+      return response.body
+    })
+}
