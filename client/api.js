@@ -1,9 +1,9 @@
 import request from 'superagent'
 
-const duckiesUrl = '/api/v1/duckies/'
+const homeUrl = '/api/v1/home/'
 
-export function getArt () {
+export function getData () {
   return request
-    .get(duckiesUrl)
+    .get(homeUrl)
     .then(response => response.body)
 }
