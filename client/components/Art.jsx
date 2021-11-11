@@ -18,6 +18,7 @@ function Art () {
 
   function handleClick () {
     refreshPrice()
+    console.log()
     getDuck()
       .then(result => {
         const newResult = result.output
@@ -33,10 +34,8 @@ function Art () {
     <>
       <div className="art-container">
         <img className="duck-Image" src={duck} />
-        { /* <h1>{props.data.title}</h1>
-        <img className="duck-Image" src={props.data.image} />
-        <p>{props.data.description}</p> */ }
-        <div className='directions' >Directions: asf adf asdf asdf asdf asdf asdf adsf asdf asdf asdf asdf asdf adsf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf adsf asdf adsf</div>
+        <div className='directions' >Directions: Look at the quacky artwork to the left - how much do you think it is worth?
+Type your answer below the duck, if you are within 10% of the real price, you get a point! You can see your points at the top of the page. When you get to 1 point, you win!</div>
       </div>
       <button onClick={handleClick} >Get New Artwork</button>
     </>
