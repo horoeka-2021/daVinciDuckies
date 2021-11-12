@@ -6,7 +6,7 @@ import Art from './Art'
 import Result from './Result'
 
 function App () {
-  // const [art, setArt] = useState([])
+
   const [guessCheck, setGuessCheck] = useState({
     price: 0,
     guess: 0
@@ -15,11 +15,10 @@ function App () {
   const [display, setDisplay] = useState(false)
   const [count, setCount] = useState(0)
 
-  // Test to make sure getPrice works as intended
   useEffect(() => {
     getPrice()
       .then(priceAPI => {
-        // console.log('This is the price', price)
+        console.log('Hacker strats, ', Number(priceAPI) * 10)
         setGuessCheck({ ...guessCheck, price: Number(priceAPI) * 10 })
         return null
       })

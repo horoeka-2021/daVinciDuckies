@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 function Result ({ guessCheck, setGuessCheck, setCount, count }) {
   const { guess, price } = guessCheck
+  console.log(guessCheck)
   const [message, setMessage] = useState('')
 
   useEffect(() => {
