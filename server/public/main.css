@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:ital,wght@0,300;0,500;1,400&family=Sacramento&family=Secular+One&display=swap%27');
 * {
   box-sizing: border-box;
 }
@@ -42,11 +42,6 @@ body {
   
 }
 
-form {
-  background-color: wheat;
-  padding: 50px;
-  color: blueviolet
-}
 
 .header-image{
   height: 250px;
@@ -122,6 +117,49 @@ p
   font-size: 2rem;
 }
 
+form {
+  background-color: white;
+  padding: 50px;
+  color: blueviolet;
+  text-align: center;
+  /* display: flex; */
+  /* flex-direction: column;
+  align-self: center; */
+  padding: 15px;
+  font-size: 2rem;
+  width: 100%;
+}
+
+
+.fieldset  {
+  background-color: white;
+  display: flex;
+  /* flex-direction: column; */
+  align-self: center;
+  padding: 15px;
+  border: none;
+}
+
+button{
+  /* font-family: 'Sacramento', cursive; */
+font-family: 'Secular One', sans-serif;
+font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  padding-left : 50px;
+  padding-right : 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+}
+input{
+  background-color: lightgray;
+  height: 30px;
+  border: none;
+  align-items: center;
+  padding: 5px;
+}
 .result-container {
   background-color: wheat;
   padding: 50px;
