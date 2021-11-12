@@ -27,12 +27,12 @@ function guessingForm ({ guessCheck, setGuessCheck, setDisplay, display }) {
       .catch(err => console.error('You can\'t even submit a form! ', err.message))
   }
 
-  function displayMessage() {
+  function displayMessage () {
     setMessage(true)
     setTimeout(hideMessage, 2000)
   }
 
-  function hideMessage() {
+  function hideMessage () {
     setMessage(false)
   }
 
