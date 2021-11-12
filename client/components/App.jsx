@@ -7,7 +7,6 @@ import Result from './Result'
 import Score from './Score'
 
 function App () {
-
   const [guessCheck, setGuessCheck] = useState({
     price: 0,
     guess: 0
@@ -31,13 +30,13 @@ function App () {
     <section className="app-section">
       <div className='wrapper'>
         <div className='header'>
-          <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" />
+          {/* <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" /> */}
           <h1 className='title'>da Vinci Duckies</h1>
         </div>
         <Score count={count} />
 
         <div className="main-container">
-          <h3>How much do you think the art is worth?</h3>
+          <h2>How much do you think the art is worth?</h2>
           <Art toggle={toggle} setToggle={setToggle} display={display} setDisplay={setDisplay}/>
           {!display && <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} display={display} setDisplay={setDisplay}/>}
           {display && <Result guessCheck={guessCheck} count={count} setCount={setCount} />}
