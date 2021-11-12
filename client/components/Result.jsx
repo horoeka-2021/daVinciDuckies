@@ -3,7 +3,7 @@ import React from 'react'
 function Result({ guessCheck, setGuessCheck }) {
 
   function resultMessage() {
-    if()
+
     
   }
 
