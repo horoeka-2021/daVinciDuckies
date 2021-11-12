@@ -21,19 +21,21 @@ body {
 }
 
 .art-container{
-  width: 200px;
-  height: 400px;
+  width: 90%;
+  height: auto;
   display: flex;
-  /* flex-direction: row;
-  justify-content: center; */
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .duck-Image {
   max-width: 500px;
+  max-height: 300px
 
 }
 
 .directions {
   width: 250px;
   margin-left: 200px;
+  font-size: 20px;
 }

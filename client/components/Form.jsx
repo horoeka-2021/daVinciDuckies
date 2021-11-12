@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { postGuess } from '../api'
 
-function guessingForm ({ guessCheck, setGuessCheck, setToggle, toggle }) {
+function guessingForm ({ guessCheck, setGuessCheck, setDisplay, display }) {
   const [input, setInput] = useState(0)
 
   function handleChange (event) {
@@ -20,7 +20,7 @@ function guessingForm ({ guessCheck, setGuessCheck, setToggle, toggle }) {
       .then(response => {
         setInput(0)
         setGuessCheck({ ...guessCheck, guess: response.input })
-        setToggle(!toggle)
+        setDisplay(!display)
         return null
       })
       .catch(err => console.error('You can\'t even submit a form! ', err.message))

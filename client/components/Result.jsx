@@ -1,18 +1,20 @@
 import React from 'react'
 
-function Result (props) {
-  const messages = ['too high, try again']
+function Result({ guessCheck, setGuessCheck }) {
+
+  function resultMessage() {
+    if()
+    
+  }
 
   return (
     <>
       <div className="result-container">
         <h1>Result</h1>
-        <h3>{messages}</h3>
-        {/* api price */}
-        <p>{props.price}</p>
+        <h3></h3>
+        <p>Your guess: {guessCheck.guess}</p>
 
-        {/* guess price */}
-        <p>{props.price}</p>
+        <p>The actual price: {guessCheck.price}</p>
 
       </div>
     </>
