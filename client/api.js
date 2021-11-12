@@ -17,14 +17,10 @@ export function getPrice () {
     .get('https://www.cheapshark.com/api/1.0/deals')
     .then(response => {
       const index = randomIndex(response.body)
-      console.log(response.body[index].salePrice)
       return response.body[index].salePrice
     })
 }
 
-export function refreshPrice () {
-  getPrice()
-}
 export function postGuess (input) {
   return request
     .post(homeUrl)
