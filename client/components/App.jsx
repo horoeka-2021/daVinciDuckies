@@ -18,8 +18,8 @@ function App () {
   useEffect(() => {
     getPrice()
       .then(priceAPI => {
-        console.log('Hacker strats, ', Number(priceAPI) * 10)
-        setGuessCheck({ ...guessCheck, price: Number(priceAPI) * 10 })
+        console.log('Hacker strats, ', (Number(priceAPI) * 10).toFixed(2))
+        setGuessCheck({ ...guessCheck, price: (Number(priceAPI) * 10).toFixed(2)})
         return null
       })
       .catch(err => console.error('Oops! You fucked up', err.message))

@@ -18,10 +18,12 @@ function Result ({ guessCheck, setCount, count }) {
   return (
     <>
       <div className="result-container">
-        <h1>Result</h1>
-        <h3>{message}</h3>
-        <p>Your guess: ${guess}</p>
-        <p>The actual price: ${price}</p>
+        <div className="result">
+          <h1>Result</h1>
+          <h2>{message}</h2>
+          <p>Your guess: ${guess}</p>
+          <p>The actual price: ${price}</p>
+        </div>
       </div>
     </>
   )
