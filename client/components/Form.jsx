@@ -20,19 +20,19 @@ function guessingForm ({ guessCheck, setGuessCheck, setDisplay, display }) {
     postGuess(Number(input))
       .then(response => {
         setInput(0)
-        setGuessCheck({ ...guessCheck, guess: response.input })
+        setGuessCheck({ ...guessCheck, guess: response.input.toFixed(2) })
         setDisplay(!display)
         return null
       })
       .catch(err => console.error('You can\'t even submit a form! ', err.message))
   }
 
-  function displayMessage() {
+  function displayMessage () {
     setMessage(true)
     setTimeout(hideMessage, 2000)
   }
 
-  function hideMessage() {
+  function hideMessage () {
     setMessage(false)
   }
 
