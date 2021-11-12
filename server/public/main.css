@@ -17,13 +17,11 @@ body {
   padding: 30px;
 
   background: linear-gradient(
-    rgba(0, 0, 0, 0.45), 
-    rgba(0, 44, 39, 0.301)
+    rgba(255, 253, 253, 0.603), 
+    rgba(191, 201, 97, 0.616)
   ), url("./images/FernandexToni-DaisyDuck.jpg");
   background-repeat: repeat;
  
-
-  
   /* background-color: aquamarine; */
 }
 
@@ -35,8 +33,9 @@ body {
   
 }
 
-.wrapper h1{
+.header h1{
   font-size: 5rem;
+  color: black
   /* display: flex;
   flex-direction: row; */
   
@@ -114,9 +113,16 @@ p
 .directions {
   width: 80%;
   margin: auto;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  background-color: rgba(49, 46, 46, 0.726);
+  padding: 20px 50px;
+  font-weight: 500;
+  color: white; 
 }
 
+.score {
+  color: hotpink
+}
 form {
   background-color: white;
   padding: 50px;
