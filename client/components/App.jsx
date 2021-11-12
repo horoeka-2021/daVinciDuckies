@@ -33,10 +33,19 @@ function App () {
           {/* <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" /> */}
           <h1 className='title'>da Vinci Duckies</h1>
         </div>
-        <Score count={count} />
 
         <div className="main-container">
-          <h2>How much do you think the art is worth?</h2>
+          <div className='directions' >
+            <h2>How much do you think the art is worth?</h2>
+            <p>
+          Directions: Look at the quacky artwork to the left - how much do you think it is worth?
+          Type your answer below the duck, if you are within 10% of the real price, you get a point! You can see your points at the top of the page. When you get to 1 point, you win!
+            </p>
+            <div className="score">
+              <Score count={count} />
+            </div>
+          </div>
+
           <Art toggle={toggle} setToggle={setToggle} display={display} setDisplay={setDisplay}/>
           {!display && <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} display={display} setDisplay={setDisplay}/>}
           {display && <Result guessCheck={guessCheck} count={count} setCount={setCount} />}
