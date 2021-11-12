@@ -6,19 +6,19 @@ import Art from './Art'
 import Result from './Result'
 
 function App () {
-  // const [art, setArt] = useState([])
+
   const [guessCheck, setGuessCheck] = useState({
     price: 0,
     guess: 0
   })
   const [toggle, setToggle] = useState(false)
   const [display, setDisplay] = useState(false)
+  const [count, setCount] = useState(0)
 
-  // Test to make sure getPrice works as intended
   useEffect(() => {
     getPrice()
       .then(priceAPI => {
-        // console.log('This is the price', price)
+        console.log('Hacker strats, ', Number(priceAPI) * 10)
         setGuessCheck({ ...guessCheck, price: Number(priceAPI) * 10 })
         return null
       })
@@ -38,7 +38,7 @@ function App () {
           <h3>How much do you think the art is worth?</h3>
           <Art toggle={toggle} setToggle={setToggle} display={display} setDisplay={setDisplay}/>
           {!display && <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} display={display} setDisplay={setDisplay}/>}
-          {display && <Result guessCheck={guessCheck} setGuessCheck={setGuessCheck} />}
+          {display && <Result guessCheck={guessCheck} setGuessCheck={setGuessCheck} count={count} setCount={setCount} />}
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { getDuck, refreshPrice } from '../api'
+import { getDuck } from '../api'
 
 function Art ({ toggle, setToggle, display, setDisplay }) {
   const [duck, setDuck] = useState('')
@@ -9,24 +9,18 @@ function Art ({ toggle, setToggle, display, setDisplay }) {
       .then(result => {
         const newResult = result.output
         setDuck(newResult)
-        console.log(newResult)
-        console.log(duck)
         return null
       })
       .catch(err => console.error('Oops! There was an error: ', err))
   }, [])
 
   function handleClick () {
-    refreshPrice()
-    console.log()
     setToggle(!toggle)
-    setDisplay(!display)
+    if (display) setDisplay(!display)
     getDuck()
       .then(result => {
         const newResult = result.output
         setDuck(newResult)
-        console.log(newResult)
-        console.log(duck)
         return null
       })
       .catch(err => console.error('Oops! There was an error: ', err))

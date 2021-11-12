@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { postGuess } from '../api'
 
 function guessingForm ({ guessCheck, setGuessCheck, setDisplay, display }) {
-  const [input, setInput] = useState(0)
+  const [input, setInput] = useState('')
+  const [message, setMessage] = useState(false)
 
   function handleChange (event) {
     setInput(event.target.value)
@@ -13,7 +14,7 @@ function guessingForm ({ guessCheck, setGuessCheck, setDisplay, display }) {
 
     if (isNaN(input)) {
       setInput(0)
-      console.log('write a number dork')
+      displayMessage()
       return
     }
     postGuess(Number(input))
@@ -26,8 +27,18 @@ function guessingForm ({ guessCheck, setGuessCheck, setDisplay, display }) {
       .catch(err => console.error('You can\'t even submit a form! ', err.message))
   }
 
+  function displayMessage() {
+    setMessage(true)
+    setTimeout(hideMessage, 2000)
+  }
+
+  function hideMessage() {
+    setMessage(false)
+  }
+
   return (
     <>
+      {message && <p>Try adding a number dingus</p>}
 
       <form>
         <fieldset>
