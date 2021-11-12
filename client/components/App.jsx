@@ -29,7 +29,7 @@ function App () {
     <section className="app-section">
       <div className='wrapper'>
         <div className='header'>
-          <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" />
+          {/* <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" /> */}
           <h1 className='title'>da Vinci Duckies</h1>
         </div>
 

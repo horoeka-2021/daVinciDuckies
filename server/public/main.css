@@ -4,17 +4,25 @@
 }
 
 body {
-  color: black;
+  color: whitesmoke;
   margin: 0;
   padding: 0;
   height:100%;
-  background-image:linear-gradient(aquamarine, #aaa);
+  /* background-image:linear-gradient(aquamarine, #aaa); */
+  
+
 }
 
 .app-section {
   padding: 30px;
 
-  
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 44, 39, 0.301)
+  ), url("./images/FernandexToni-DaisyDuck.jpg");
+  background-repeat: repeat;
+ 
+
   
   /* background-color: aquamarine; */
 }
@@ -22,9 +30,21 @@ body {
 .wrapper{
   text-align: center;
   margin: 50px;
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   
+}
+
+.wrapper h1{
+  font-size: 5rem;
+  /* display: flex;
+  flex-direction: row; */
+  
+}
+form {
+  background-color: wheat;
+  padding: 50px;
+  color: blueviolet
 }
 
 .header-image{
