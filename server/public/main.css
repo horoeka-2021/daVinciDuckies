@@ -7,12 +7,19 @@ body {
   color: black;
   margin: 0;
   padding: 0;
+  background-image:linear-gradient(aquamarine, #aaa);
+  height:100%;
 }
 
+.app-section {
+  padding: 30px;
+  /* background-color: aquamarine; */
+}
 
 .wrapper{
   text-align: center;
   margin: 50px;
+  
 }
 
 .header-image{
@@ -20,17 +27,62 @@ body {
   width: auto;
 }
 
-.art-container{
+/* .art-container{
   width: 90%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+} */
+
+.frame {
+  background-color:#ddc;
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  margin:10vh 10vw;
+  height:auto;
+  padding:5vmin 2vmin;
+  position:relative;
+  text-align:center;
+   
+}
+.frame:before {
+  border-radius:2px;
+  bottom:-2vmin;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+  content:"";
+  left:-2vmin;
+  position:absolute;
+  right:-2vmin;
+  top:-2vmin;
+}
+.frame:after {
+  border-radius:2px;
+  bottom:-2.5vmin;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+  content:"";
+  left:-2.5vmin;
+  position:absolute;
+  right:-2.5vmin;
+  top:-2.5vmin;
 }
 
+
 .duck-Image {
-  max-width: 500px;
-  max-height: 300px
+  border:solid 2px;
+  border-bottom-color:#ffe;
+  border-left-color:#eed;
+  border-right-color:#eed;
+  border-top-color:#ccb;
+  max-height:auto;
+  max-width:60%
 
 }
 
