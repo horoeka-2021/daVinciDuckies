@@ -119,13 +119,12 @@ p
 
 form {
   background-color: white;
-  padding: 50px;
+  padding: 60px;
   color: blueviolet;
   text-align: center;
   /* display: flex; */
   /* flex-direction: column;
   align-self: center; */
-  padding: 15px;
   font-size: 2rem;
   width: 100%;
 }
@@ -145,6 +144,7 @@ button{
 font-family: 'Secular One', sans-serif;
 font-size: 20px;
   text-align: center;
+  margin: 25px;
   padding: 10px;
   padding-left : 50px;
   padding-right : 50px;
