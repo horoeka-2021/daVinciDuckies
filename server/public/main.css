@@ -41,6 +41,7 @@ body {
   flex-direction: row; */
   
 }
+
 form {
   background-color: wheat;
   padding: 50px;
@@ -119,4 +120,17 @@ p
   width: 80%;
   margin: auto;
   font-size: 2rem;
+}
+
+.result-container {
+  background-color: wheat;
+  padding: 50px;
+  color: blueviolet;
+  font-size: 22px;
+  border: 1px groove black;
+
+}
+
+.result {
+  border: 1px groove black;
 }
