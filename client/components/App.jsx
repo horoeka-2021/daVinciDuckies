@@ -13,6 +13,7 @@ function App () {
   })
   const [toggle, setToggle] = useState(false)
   const [display, setDisplay] = useState(false)
+  const [count, setCount] = useState(0)
 
   // Test to make sure getPrice works as intended
   useEffect(() => {
@@ -37,7 +38,7 @@ function App () {
         <h3>How much do you think the art is worth?</h3>
         <Art toggle={toggle} setToggle={setToggle} display={display} setDisplay={setDisplay}/>
         {!display && <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} display={display} setDisplay={setDisplay}/>}
-        {display && <Result guessCheck={guessCheck} setGuessCheck={setGuessCheck} />}
+        {display && <Result guessCheck={guessCheck} setGuessCheck={setGuessCheck} count={count} setCount={setCount} />}
       </div>
     </div>
 
