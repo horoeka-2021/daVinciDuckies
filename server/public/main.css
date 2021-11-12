@@ -7,12 +7,19 @@ body {
   color: black;
   margin: 0;
   padding: 0;
+  background-image:linear-gradient(aquamarine, #aaa);
+  height:100%;
 }
 
+.app-section {
+  padding: 30px;
+  /* background-color: aquamarine; */
+}
 
 .wrapper{
   text-align: center;
   margin: 50px;
+  
 }
 
 .header-image{

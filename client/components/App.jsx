@@ -27,20 +27,21 @@ function App () {
 
   return (
 
-    <div className='wrapper'>
-      <div className='header'>
-        <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" />
-        <h1 className='title'>da Vinci Duckies</h1>
-      </div>
+    <section className="app-section">
+      <div className='wrapper'>
+        <div className='header'>
+          <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" />
+          <h1 className='title'>da Vinci Duckies</h1>
+        </div>
 
-      <div className="body">
-        <h3>How much do you think the art is worth?</h3>
-        <Art toggle={toggle} setToggle={setToggle} display={display} setDisplay={setDisplay}/>
-        {!display && <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} display={display} setDisplay={setDisplay}/>}
-        {display && <Result guessCheck={guessCheck} setGuessCheck={setGuessCheck} />}
+        <div className="main-container">
+          <h3>How much do you think the art is worth?</h3>
+          <Art toggle={toggle} setToggle={setToggle} display={display} setDisplay={setDisplay}/>
+          {!display && <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} display={display} setDisplay={setDisplay}/>}
+          {display && <Result guessCheck={guessCheck} setGuessCheck={setGuessCheck} />}
+        </div>
       </div>
-    </div>
-
+    </section>
   )
 }
 
