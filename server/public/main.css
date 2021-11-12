@@ -113,7 +113,7 @@ p
 .directions {
   width: 80%;
   margin: auto;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   background-color: rgba(49, 46, 46, 0.712);
   padding: 20px 50px;
   font-weight: 500;
@@ -167,7 +167,7 @@ input{
   padding: 5px;
 }
 .result-container {
-  background-color: wheat;
+  background-color: white;
   padding: 50px;
   color: blueviolet;
   font-size: 22px;
