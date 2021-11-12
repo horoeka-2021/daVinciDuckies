@@ -42,7 +42,7 @@ function guessingForm ({ guessCheck, setGuessCheck, setDisplay, display }) {
 
       <form>
         <fieldset>
-          <legend>Make A guess</legend>
+          <legend>Take A Guess!</legend>
           <label>
             <span>Price</span>
             <input name="price" value={input} onChange={handleChange}/>

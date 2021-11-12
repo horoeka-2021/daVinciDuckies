@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react'
 
-function Result ({ guessCheck, setGuessCheck, setCount, count }) {
+function Result ({ guessCheck, setCount, count }) {
   const { guess, price } = guessCheck
-  console.log(guessCheck)
   const [message, setMessage] = useState('')
 
   useEffect(() => {
     if (guess > price * 0.9 && guess < price * 1.1) {
-      setMessage('You win!')
+      setMessage('Well done! You have an eye for fine ducks')
       setCount(count + 1)
+    } else if (guess < price * 0.9) {
+      setMessage('How dare you!')
     } else {
-      setMessage('You suck!')
+      setMessage('You want to pay how much!?!')
     }
   }, [])
 
@@ -19,10 +20,8 @@ function Result ({ guessCheck, setGuessCheck, setCount, count }) {
       <div className="result-container">
         <h1>Result</h1>
         <h3>{message}</h3>
-        <p>Your guess: {guess}</p>
-
-        <p>The actual price: {price}</p>
-        <p>Your wins: {count}</p>
+        <p>Your guess: ${guess}</p>
+        <p>The actual price: ${price}</p>
       </div>
     </>
   )

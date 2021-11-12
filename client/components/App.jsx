@@ -4,6 +4,7 @@ import { getPrice } from '../api'
 import Form from './Form'
 import Art from './Art'
 import Result from './Result'
+import Score from './Score'
 
 function App () {
 
@@ -33,12 +34,13 @@ function App () {
           <img className="header-image" src="images/FernandexToni-DaisyDuck.jpg" />
           <h1 className='title'>da Vinci Duckies</h1>
         </div>
+        <Score count={count} />
 
         <div className="main-container">
           <h3>How much do you think the art is worth?</h3>
           <Art toggle={toggle} setToggle={setToggle} display={display} setDisplay={setDisplay}/>
           {!display && <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} display={display} setDisplay={setDisplay}/>}
-          {display && <Result guessCheck={guessCheck} setGuessCheck={setGuessCheck} count={count} setCount={setCount} />}
+          {display && <Result guessCheck={guessCheck} count={count} setCount={setCount} />}
         </div>
       </div>
     </section>
