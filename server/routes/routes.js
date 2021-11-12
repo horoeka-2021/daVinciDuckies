@@ -6,10 +6,8 @@ module.exports = router
 
 // Server use '/api/v1/home'
 router.get('/', (req, res) => {
-  console.log('Hello!')
   request.get('https://random-d.uk/api/v2/random')
     .then(response => {
-      console.log(response.body)
       res.json({ output: response.body.url })
       return null
     }).catch(err => console.error(err))
