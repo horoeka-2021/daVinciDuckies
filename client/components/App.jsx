@@ -6,7 +6,6 @@ import Art from './Art'
 import Result from './Result'
 
 function App () {
-
   const [guessCheck, setGuessCheck] = useState({
     price: 0,
     guess: 0
@@ -35,7 +34,7 @@ function App () {
         </div>
 
         <div className="main-container">
-          <h3>How much do you think the art is worth?</h3>
+          <h2>How much do you think the art is worth?</h2>
           <Art toggle={toggle} setToggle={setToggle} display={display} setDisplay={setDisplay}/>
           {!display && <Form guessCheck={guessCheck} setGuessCheck={setGuessCheck} display={display} setDisplay={setDisplay}/>}
           {display && <Result guessCheck={guessCheck} setGuessCheck={setGuessCheck} count={count} setCount={setCount} />}

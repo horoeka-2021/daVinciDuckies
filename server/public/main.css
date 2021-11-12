@@ -7,24 +7,33 @@ body {
   color: black;
   margin: 0;
   padding: 0;
-  background-image:linear-gradient(aquamarine, #aaa);
   height:100%;
+  background-image:linear-gradient(aquamarine, #aaa);
 }
 
 .app-section {
   padding: 30px;
+
+  
+  
   /* background-color: aquamarine; */
 }
 
 .wrapper{
   text-align: center;
   margin: 50px;
+  display: flex;
+  flex-direction: row;
   
 }
 
 .header-image{
-  height: 150px;
+  height: 250px;
   width: auto;
+}
+
+.main-container h2{
+  font-size: 3rem;
 }
 
 /* .art-container{
@@ -83,11 +92,11 @@ body {
   border-top-color:#ccb;
   max-height:auto;
   max-width:85%
-
+p
 }
 
 .directions {
-  width: 250px;
-  margin-left: 200px;
-  font-size: 20px;
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
 }
