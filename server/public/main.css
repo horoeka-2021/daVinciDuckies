@@ -160,3 +160,15 @@ input{
   align-items: center;
   padding: 5px;
 }
+.result-container {
+  background-color: wheat;
+  padding: 50px;
+  color: blueviolet;
+  font-size: 22px;
+  border: 1px groove black;
+
+}
+
+.result {
+  border: 1px groove black;
+}

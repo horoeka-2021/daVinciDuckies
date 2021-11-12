@@ -20,7 +20,7 @@ function guessingForm ({ guessCheck, setGuessCheck, setDisplay, display }) {
     postGuess(Number(input))
       .then(response => {
         setInput(0)
-        setGuessCheck({ ...guessCheck, guess: response.input })
+        setGuessCheck({ ...guessCheck, guess: response.input.toFixed(2) })
         setDisplay(!display)
         return null
       })
